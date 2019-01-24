@@ -26,7 +26,27 @@
 /* We start writing out flexbox here. The above is just page setup. */
 .container{
 	display:flex;
-	border:10px solid rgb(223, 203, 154);
-	height: 100vh;
+	border:10px solid goldenrod;
+	min-height:100vh;
+	/* height:100vh; */
+	/* flex-wrap:nowrap; */
+	flex-wrap:wrap;
+	/* flex-direction:column; */
+	/* flex-direction:row; */
+	/* flex-wrap:wrap-reverse;  */
+		/* axis is reversed */
 }
 
+/* we don't put the flex-wrap property on the item, instead we put it on the container, above */
+.box{
+	/* width:700px; */
+	width:33.3333333%;
+	/* width:33.3333333% - 20px; */
+	/* width:calc(20%- 20px); */
+	/* width:calc(33.3333333% -20px); */
+	/* width:17%; */
+	/* width:50%; */
+	/* margin:10px; */
+	/* margin is not part of the box model */
+	padding:10px;
+}
